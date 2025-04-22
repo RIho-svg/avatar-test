@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アバター表情切り替え</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; }
+    .controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(255,255,255,0.8);
+      padding: 10px;
+      border-radius: 10px;
+    }
+    button { margin: 5px; }
+  </style>
+</head>
+<body>
+  <div class="controls">
+    <button onclick="setExpression('happy')">喜（Happy）</button>
+    <button onclick="setExpression('angry')">怒（Angry）</button>
+    <button onclick="setExpression('sad')">哀（Sad）</button>
+    <button onclick="setExpression('joy')">楽（Joy）</button>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
